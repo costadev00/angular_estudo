@@ -76,7 +76,7 @@ export class OfertasService {
 		return new Promise((resolve, reject) => {
 			console.log('passou no getOfertas');
 			//algum tipo de processamento, que ao finalizar, chama a função resolve ou reject
-			let deu_certo = false;
+			let deu_certo = true;
 			if (deu_certo) {
 				resolve(this.ofertas);
 			} else {
