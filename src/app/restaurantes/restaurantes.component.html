@@ -1,0 +1,25 @@
+<div class="container">
+  
+  <div class="secao">
+    <h3 class="text-center">Os melhores restaurantes separados especialmente para você!</h3>
+    <h5 class="text-center">Confira as ofertas</h5>
+  </div>
+
+  <hr />
+
+<div class="row" style="margin-bottom: 50px">
+  <div class="col-sm-4" *ngFor="let oferta of ofertas">
+    <div class="card">
+      <img class="img-fluid" [src]="oferta.imagens[0].url">
+      <div class="card-block">
+        <h4 class="card-title">{{ oferta.titulo }}</h4>
+        <p class="card-text">{{ oferta.descricao_oferta }}</p>
+        <p class="preco">R$ {{ oferta.valor }}</p>
+        <p><strong>Anunciante:</strong> {{ oferta.anunciante }}</p>
+        <button [routerLink]="['/oferta', oferta.id]" class="btn btn-outline-primary">Ver oferta</button>
+      </div>
+    </div>
+  </div>
+  <hr />
+
+</div>

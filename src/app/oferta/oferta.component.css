@@ -1,0 +1,23 @@
+h1 {
+    color: #555
+}
+
+.oferta {
+    margin-top: 25px
+}
+
+.oferta img {
+    width: 372px;
+    height: 240px;
+}
+
+.thumbnails {
+    margin-top: 10px;
+}
+
+.thumbnails img {
+    width: 124px;
+    height: 80px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}

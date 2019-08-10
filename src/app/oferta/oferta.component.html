@@ -1,0 +1,70 @@
+
+<div class="container">
+  <div class="oferta" *ngIf="oferta !== undefined">
+<div class="row">
+    <div class="col">
+    <!-- <hr><a [routerLink]="['/oferta',1]" routerLinkActive="active">Oferta 1</a><hr>
+    <hr><a [routerLink]="['/oferta',2]" routerLinkActive="active">Oferta 2</a><hr>
+    <hr><a [routerLink]="['/oferta',3]" routerLinkActive="active">Oferta 3</a> <hr> -->
+    
+    </div>
+  </div>
+    <div class="row">
+      <div class="col">
+        <h4>{{ oferta.descricao_oferta }}</h4>
+        <h4>Esse é o resultado do Observable <b>{{ resultado2 }}</b></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="img_capa">
+          <img [src]="oferta.imagens[0].url" />
+        </div>
+
+        <div class="thumbnails">
+          <img *ngFor="let imagem of oferta.imagens" [src]="imagem.url" />
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col text-center">
+            <p>Por apenas</p>
+          </div>
+          
+        </div>
+
+        <div class="row">
+          <div class="col text-center">
+            <h1>{{ oferta.valor }}</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col text-center">
+            <button type="button" class="btn btn-warning btn-lg">Adicionar ao carrinho</button>
+          </div>
+        </div>
+          
+      </div>
+
+    </div>
+
+  </div>
+  <div class="row" style="margin-bottom: 25px; margin-bottom: 150px">
+    <div class="col">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" routerLinkActive="active" routerLink="como-usar" data-toggle="tab" role="tab" aria-expanded="true">Como usar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="onde-fica" data-toggle="tab" role="tab">Onde fica?</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
