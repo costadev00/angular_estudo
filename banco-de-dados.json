@@ -91,6 +91,20 @@
 			"valor": 9.9,
 			"destaque": false,
 			"imagens": [ { "url": "/assets/ofertas/7/salgado.jpg" }, { "url": "/assets/ofertas/7/salgado2.jpg" } ]
+		},
+		{
+			"id": 8,
+			"categoria": "diversao",
+			"titulo": "MAURO 2 por 1 real",
+			"descricao_oferta": "Produto altamente eficaz, costuma comer pastel nas horas vagas",
+			"anunciante": "Manoel De Deus",
+			"valor": 1,
+			"destaque": true,
+			"imagens": [
+				{
+					"url": "/assets/ofertas/8/mauro.jpg"
+				}
+			]
 		}
 	],
 
@@ -122,6 +136,10 @@
 		{
 			"id": 7,
 			"descricao": "O melhor preço da região"
+		},
+		{
+			"id": 8,
+			"descricao": "Use a vontade"
 		}
 	],
 
@@ -153,6 +171,10 @@
 		{
 			"id": 7,
 			"descricao": "Rua Pires do Rio, 915, Araguari - MG "
+		},
+		{
+			"id": 8,
+			"descricao": "Produto altamente eficaz, costuma comer pastel nas horas vagas "
 		}
 	]
 }
